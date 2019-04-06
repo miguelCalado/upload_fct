@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.example.snovaisg.myuploadFCT">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Upload FCT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="org.example.snovaisg.myuploadFCT.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.Cantina.CantinaPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.Teresa.TeresaPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.MySpot.mySpotPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.BarCampus.BarCampusPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.CasaPessoal.CasaPPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.Come.ComePreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.SectorDep.SectorDepPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.Sector7.Sector7PreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.Girassol.GirassolPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.Lidia.BarLidiaPreVisualiza"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSobremesa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageSobremesa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.PorAtualizar"
+            android:screenOrientation="portrait"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Login">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.example.snovaisg.myuploadFCT.Login" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.UploadPageSopa"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.UploadPageCarne"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageSopa"
+            android:screenOrientation="portrait">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="org.example.snovaisg.myuploadFCT.UploadPageSopa" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.UploadPagePeixe"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageCarne"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageCarne" />
+        </activity>
+
+        <activity
+            android:name="org.example.snovaisg.myuploadFCT.UploadPageVegetariano"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPagePeixe"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPagePeixe" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.UploadPageSobremesa"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageVegetariano"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageVegetariano" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.UploadPageOpcao"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageVegetariano"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageVegetariano" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.UploadPageMenu"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPageVegetariano"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPageVegetariano" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.UploadPageDieta"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.UploadPagePeixe"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.UploadPagePeixe" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Cantina.CantinaVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Teresa.TeresaVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.MySpot.mySpotVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.BarCampus.BarCampusVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.CasaPessoal.CasaPVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Come.ComeVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.SectorDep.SectorDepVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Sector7.Sector7Visualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Girassol.GirassolVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Lidia.BarLidiaVisualiza"
+            android:parentActivityName="org.example.snovaisg.myuploadFCT.Atualizado"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.example.snovaisg.myuploadFCT.Atualizado" />
+        </activity>
+
+
+        <activity android:name="org.example.snovaisg.myuploadFCT.Atualizado" />
+        <activity android:name="org.example.snovaisg.myuploadFCT.Visualizar" />
+        <activity android:name="org.example.snovaisg.myuploadFCT.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.example.snovaisg.myuploadFCT.Login" />
+        <activity android:name="org.example.snovaisg.myuploadFCT.Notificacoes"></activity>
+    </application>
+
+</manifest>

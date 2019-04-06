@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="24dp"
+        android:textStyle="bold|italic"
+        tools:text="Teresa" />
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:text="Terça Feira" />
+
+    <TextView
+        android:id="@+id/date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date1"
+        android:layout_marginTop="18dp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        tools:text="27-02-2018!" />
+
+    <TextView
+        android:id="@+id/Estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Atualizado!"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/Estado"
+        android:layout_marginBottom="52dp"
+        android:text="Visualizar" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:paddingBottom="16dp"
+        android:text="Notificações" />
+
+</RelativeLayout>

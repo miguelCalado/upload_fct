@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.snovaisg.myuploadFCT.UploadPageCarne">
+
+    <LinearLayout
+        android:id="@+id/linear_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="0dp"
+            android:text="Escolher Pratos de Hoje"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carne"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView3"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:text="Escreva todos os Pratos de Carne e os seus respectivos preços (Opcional)." />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/carne1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 1"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 3"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 4"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 5"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 6"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato6"
+                        android:ems="10"
+                        android:hint="Prato de Carne 7"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato7"
+                        android:ems="10"
+                        android:hint="Prato de Carne 8"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato8"
+                        android:ems="10"
+                        android:hint="Prato de Carne 9"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato5"
+                        android:ems="10"
+                        android:hint="Prato de Carne 10"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 11"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/carne12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato de Carne 12"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:orientation="horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/precoCarne1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 1"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 3"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 4"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 5"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 6"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 7"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 8"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 9"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 10"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 11"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoCarne12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 12"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_alignParentBottom="true"
+                        android:text="Cancelar" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:text="Seguinte" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="ANTERIOR" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.example.snovaisg.myuploadFCT.UploadPageVegetariano">
+
+    <LinearLayout
+        android:id="@+id/linear_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="0dp"
+            android:text="Escolher Pratos de Hoje"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetariano"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView3"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:text="Escreva todos os Pratos vegetarianos e os seus respectivos preços (Opcional)." />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <EditText
+                        android:id="@+id/veg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 1"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato1"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato2"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 3"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato3"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 4"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato4"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 5"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato5"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 6"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato6"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 7"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/veg8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato7"
+                        android:ems="10"
+                        android:hint="Prato Vegetariano 8"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/precoVeg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Preço 1"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato1"
+                        android:ems="10"
+                        android:hint="Preço 2"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato2"
+                        android:ems="10"
+                        android:hint="Preço 3"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato3"
+                        android:ems="10"
+                        android:hint="Preço 4"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato4"
+                        android:ems="10"
+                        android:hint="Preço 5"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato5"
+                        android:ems="10"
+                        android:hint="Preço 6"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato6"
+                        android:ems="10"
+                        android:hint="Preço 7"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/precoVeg8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/prato7"
+                        android:ems="10"
+                        android:hint="Preço 8"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Cancelar" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="8dp"
+                        android:text="Seguinte" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="20dp"
+                        android:text="ANTERIOR" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
